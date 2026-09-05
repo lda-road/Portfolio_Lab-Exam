@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Del Ayre — Portfolio</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarNav"
+    data-bs-root-margin="0px 0px -45%"
+    tabindex="0"
+  >
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <span class="avatar-wrap size-sm"
+            ><span class="avatar" id="logo-avatar"></span
+          ></span>
+          <i class="bi bi-controller fs-4 me-2"></i>
+          Del Ayre Portfolio
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mission">MISSION / VISION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT ME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="sky-a">
+      <div class="stars"></div>
+      <div class="container position-relative" style="z-index: 2">
+        <div
+          class="row align-items-center justify-content-center g-5 text-center text-lg-start"
+        >
+          <div class="col-lg-6">
+            <h1 style="font-size: 32px; text-shadow: 4px 4px 0 var(--ink)">
+              WELCOME TO MY<br /><span style="color: var(--gold)"
+                >PORTFOLIO</span
+              >
+            </h1>
+            <p class="mt-3" style="color: #cfc7ea">
+              A small space where I share my journey in technology, the things
+              I’m passionate about, and the skills I’m building along the way.
+              Every project is another step toward becoming a better IT
+              professional.
+            </p>
+            <a href="#gallery" class="btn btn-pixel mt-3">VIEW GALLERY</a>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div
+              class="p-4"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 3px solid var(--gold);
+              "
+            >
+              <span class="avatar-wrap size-lg"
+                ><span class="avatar" id="hero-avatar"></span
+              ></span>
+            </div>
+            <div class="floating-coins">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pixel-tree left">
+        <div class="leaves"></div>
+        <div class="trunk"></div>
+      </div>
+      <div class="pixel-tree right">
+        <div class="leaves"></div>
+        <div class="trunk"></div>
+      </div>
+      <div class="ground"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="sky-b">
+      <div class="stars"></div>
+      <div class="container position-relative" style="z-index: 2">
+        <div class="section-head text-center mb-5">
+          <div class="mb-2"><span class="star-icon">★</span></div>
+          <h2>ABOUT ME</h2>
+          <p class="mx-auto" style="max-width: 520px">
+            I believe every challenge is an opportunity to learn and grow.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card card-pixel p-4 h-100 d-flex flex-column">
+              <h3 class="mb-3">WHO I AM</h3>
+
+              <p>
+                Hi, I'm Lourence Del Ayre, a BS Information Technology student
+                passionate about programming, web development, and technology.
+              </p>
+
+              <p>
+                I enjoy turning ideas into simple and useful projects while
+                continuously learning and improving my skills.
+              </p>
+
+              <div class="d-flex gap-2 flex-wrap mt-3">
+                <span class="badge-pixel fs-6">EXPLORER</span>
+                <span class="badge-pixel fs-6">CREATOR</span>
+                <span class="badge-pixel fs-6">LVL 19</span>
+              </div>
+
+              <!-- Modal Button -->
+              <div class="mt-auto pt-4">
+                <button
+                  type="button"
+                  class="btn btn-pixel"
+                  data-bs-toggle="modal"
+                  data-bs-target="#profileModal"
+                >
+                  <i class="bi bi-person-fill me-2"></i>
+                  MORE ABOUT ME
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card card-pixel p-4 h-100">
+              <h3 class="mb-3">WHAT YOU'LL FIND HERE</h3>
+
+              <p class="mb-3">
+                Learn more about my background, interests, and goals through the
+                sections below.
+              </p>
+
+              <!-- Accordion -->
+              <div class="accordion" id="aboutAccordion">
+                <!-- Educational Background -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseEdu"
+                    >
+                      <i class="bi bi-mortarboard-fill me-2"></i>
+                      Educational Background
+                    </button>
+                  </h2>
+
+                  <div
+                    id="collapseEdu"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#aboutAccordion"
+                  >
+                    <div class="accordion-body">
+                      Senior High School graduate under the TVL – ICT strand,
+                      currently completing a Bachelor of Science in Information
+                      Technology at the University of Cabuyao (PnC). I am
+                      developing my knowledge in web development, programming,
+                      networking, and database management.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSkills"
+                    >
+                      <i class="bi bi-code-slash me-2"></i>
+                      Skills
+                    </button>
+                  </h2>
+
+                  <div
+                    id="collapseSkills"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#aboutAccordion"
+                  >
+                    <div class="accordion-body">
+                      <p class="mb-2">HTML</p>
+                      <div class="progress mb-3">
+                        <div
+                          class="progress-bar bg-warning skill-bar"
+                          role="progressbar"
+                          data-width="60"
+                          style="width: 0%"
+                        >
+                          60%
+                        </div>
+                      </div>
+
+                      <p class="mb-2">CSS</p>
+                      <div class="progress mb-3">
+                        <div
+                          class="progress-bar bg-warning skill-bar"
+                          role="progressbar"
+                          data-width="65"
+                          style="width: 0%"
+                        >
+                          65%
+                        </div>
+                      </div>
+
+                      <p class="mb-2">JavaScript</p>
+                      <div class="progress mb-3">
+                        <div
+                          class="progress-bar bg-warning skill-bar"
+                          role="progressbar"
+                          data-width="30"
+                          style="width: 0%"
+                        >
+                          30%
+                        </div>
+                      </div>
+
+                      <p class="mb-2">Bootstrap</p>
+                      <div class="progress">
+                        <div
+                          class="progress-bar bg-warning skill-bar"
+                          role="progressbar"
+                          data-width="65"
+                          style="width: 0%"
+                        >
+                          65%
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Interests & Hobbies -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseInterests"
+                    >
+                      <i class="bi bi-controller me-2"></i>
+                      Interests &amp; Hobbies
+                    </button>
+                  </h2>
+
+                  <div
+                    id="collapseInterests"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#aboutAccordion"
+                  >
+                    <div class="accordion-body">
+                      I enjoy playing games, exploring creative designs,
+                      learning about technology, watching movies, listening to
+                      music, and spending time with friends.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Goals -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseGoals"
+                    >
+                      <i class="bi bi-trophy-fill me-2"></i>
+                      Goals
+                    </button>
+                  </h2>
+
+                  <div
+                    id="collapseGoals"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#aboutAccordion"
+                  >
+                    <div class="accordion-body">
+                      My goal is to successfully complete my degree, improve my
+                      skills in information technology, gain experience in web
+                      development, and eventually become a professional
+                      developer who creates useful and creative digital
+                      solutions.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pixel-tree left">
+        <div class="leaves"></div>
+        <div class="trunk"></div>
+      </div>
+      <div class="pixel-tree right">
+        <div class="leaves"></div>
+        <div class="trunk"></div>
+      </div>
+      <div class="ground"></div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="profileModal"
+      tabindex="-1"
+      aria-labelledby="profileModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content card-pixel">
+          <div class="modal-header">
+            <h5 class="modal-title" id="profileModalLabel">
+              <i class="bi bi-person-fill me-2"></i>
+              PLAYER PROFILE
+            </h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Hi! I'm Lourence Del Ayre, a BS Information Technology student at
+              the University of Cabuyao.
+            </p>
+
+            <p>
+              I am interested in programming, web development, technology, and
+              creative digital projects.
+            </p>
+
+            <p>
+              My goal is to continue improving my skills and become a
+              professional IT developer.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-pixel-gold"
+              data-bs-dismiss="modal"
+            >
+              CLOSE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="sky-c">
+      <div class="stars"></div>
+      <div class="container position-relative" style="z-index: 2">
+        <div class="section-head text-center mb-5">
+          <div class="mb-2">
+            <span class="star-icon">★</span>
+          </div>
+
+          <h2>MY GALLERY</h2>
+
+          <p>A collection of images from my storage.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- CARD 1-->
+          <div class="col-md-6 col-lg-4">
+            <div class="photo-card">
+              <div class="scene">
+                <img src="pic1.jpe" alt="" class="gallery-photo" />
+                <div class="photo-overlay">
+                  <h4>01</h4>
+                  <h3>Me</h3>
+                  <p>Just Me.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="photo-card">
+              <div class="scene">
+                <img src="1.jpe" alt="" class="gallery-photo" />
+                <div class="photo-overlay">
+                  <h4>02</h4>
+                  <h3>Me Again</h3>
+                  <p>My second photo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="photo-card">
+              <div class="scene">
+                <img src="pic.png" alt="" class="gallery-photo" />
+                <div class="photo-overlay">
+                  <h4>03</h4>
+                  <h3>Also Me</h3>
+                  <p>Another view of me.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="photo-card">
+              <div class="scene">
+                <img src="2.jpe" alt="" class="gallery-photo" />
+                <div class="photo-overlay">
+                  <h4>04</h4>
+                  <h3>Child Version</h3>
+                  <p>This only my pics</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="photo-card">
+              <div class="scene">
+                <img src="3.jpe" alt="" class="gallery-photo" />
+                <div class="photo-overlay">
+                  <h4>05</h4>
+                  <h3>Old Profile</h3>
+                  <p>Child Version</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 6  -->
+          <div class="col-md-6 col-lg-4">
+            <div class="photo-card">
+              <div class="scene">
+                <img src="4.jpe" alt="" class="gallery-photo" />
+                <div class="photo-overlay">
+                  <h4>06</h4>
+                  <h3>Just Me</h3>
+                  <p>Just me.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pixel-tree left">
+        <div class="leaves"></div>
+        <div class="trunk"></div>
+      </div>
+      <div class="pixel-tree right">
+        <div class="leaves"></div>
+        <div class="trunk"></div>
+      </div>
+      <div class="ground"></div>
+    </section>
+
+    <!-- MISSION -->
+    <section id="mission" class="sky-d">
+      <div class="stars"></div>
+      <div class="container position-relative" style="z-index: 2">
+        <div class="section-head text-center mb-5">
+          <div class="mb-2"><span class="star-icon">★</span></div>
+          <h2>MISSION & VISION</h2>
+          <p class="mx-auto" style="max-width: 520px">
+            The university's of cabuyao (PNC) mission and vision.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card card-pixel p-4 h-100 text-center">
+              <i class="bi bi-bullseye mission-icon mb-2 text-warning"></i>
+              <h3 class="mb-2">MISSION</h3>
+              <p>
+                As an institution of higher learning, the University of Cabuyao
+                (PnC) is committed to equipping individuals with the knowledge,
+                skills, and values needed to reach their professional goals, and
+                to providing leadership and service for national development.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card card-pixel p-4 h-100 text-center">
+              <i class="bi bi-eye-fill mission-icon mb-2 text-warning"></i>
+              <h3 class="mb-2">VISION</h3>
+              <p>
+                A premier educational institution of higher learning in Region
+                IV, developing globally competitive and value-laden
+                professionals and leaders instrumental to community development
+                and nation-building.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pixel-tree left">
+        <div class="leaves"></div>
+        <div class="trunk"></div>
+      </div>
+      <div class="pixel-tree right">
+        <div class="leaves"></div>
+        <div class="trunk"></div>
+      </div>
+      <div class="ground"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="sky-a">
+      <div class="stars"></div>
+      <div class="container position-relative" style="z-index: 2">
+        <div class="section-head text-center mb-5">
+          <div class="mb-2"><span class="star-icon">★</span></div>
+          <h2>CONTACT ME</h2>
+          <p class="mx-auto" style="max-width: 520px">
+            Send a message, or reach out via email or social media.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-6">
+            <form id="contact-form" class="card card-pixel form-pixel p-4">
+              <label for="name" class="form-label">NAME</label>
+              <input
+                id="name"
+                type="text"
+                class="form-control"
+                placeholder="Your name"
+                required
+              />
+              <label for="email" class="form-label">EMAIL</label>
+              <input
+                id="email"
+                type="email"
+                class="form-control"
+                placeholder="you@example.com"
+                required
+              />
+              <label for="message" class="form-label">MESSAGE</label>
+              <textarea
+                id="message"
+                class="form-control"
+                rows="4"
+                placeholder="Say something nice..."
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-pixel-gold mt-4">
+                SEND MESSAGE
+              </button>
+              <div
+                id="form-msg"
+                class="alert alert-success alert-dismissible fade show mt-3"
+                role="alert"
+                style="display: none"
+              >
+                <i class="bi bi-check-circle-fill me-2"></i>
+                Message sent successfully!
+
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-4">
+            <h3 class="mb-3" style="font-size: 15px; color: var(--gold)">
+              OTHER WAYS TO REACH ME
+            </h3>
+            <!-- Component 13: List Group -->
+            <div class="list-group list-group-pixel mt-3">
+              <a
+                href="mailto:your@email.com"
+                class="list-group-item list-group-item-action"
+              >
+                <i class="bi bi-envelope-fill me-2"></i>
+                Email Me
+              </a>
+
+              <div class="list-group-item">
+                <i class="bi bi-geo-alt-fill me-2"></i>
+                Santa Rosa, Laguna, Philippines
+              </div>
+
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-facebook me-2"></i>
+                Facebook
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-instagram me-2"></i>
+                Instagram
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-twitter-x me-2"></i>
+                Twitter / X
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pixel-tree left">
+        <div class="leaves"></div>
+        <div class="trunk"></div>
+      </div>
+      <div class="pixel-tree right">
+        <div class="leaves"></div>
+        <div class="trunk"></div>
+      </div>
+      <div class="ground"></div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="battlement" aria-hidden="true"></div>
+      <div class="footer-wall">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <span class="avatar-wrap size-sm"
+                ><span
+                  class="avatar"
+                  id="footer-avatar"
+                  data-shirt="#ffd75e"
+                ></span
+              ></span>
+              <div>
+                <p class="footer-title">DEL AYRE</p>
+                <p class="footer-sub">
+                  BSIT &middot; University of Cabuyao (PnC)
+                </p>
+              </div>
+            </div>
+
+            <div class="footer-slots">
+              <a href="mailto:your@email.com" class="footer-slot" title="Email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+              <a href="#" class="footer-slot" title="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="footer-slot" title="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="footer-slot" title="Twitter / X">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-baseline">
+            <span class="block-dot"></span>
+            <p>&copy; 2026 Del Ayre | University of Cabuyao (PnC) | BSIT.</p>
+            <span class="block-dot"></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // ---------- Pixel avatar via box-shadow technique ----------
+      const grid = [
+        "..hhhh..",
+        ".hffffh.",
+        ".hfefef.",
+        "..ffff..",
+        ".ssssss.",
+        ".ssssss.",
+        ".ssssss.",
+        "..ssss..",
+        "..pp.pp.",
+        "..pp.pp.",
+        "..pp.pp.",
+        "..oo.oo.",
+      ];
+      const baseColors = {
+        h: "#4a2c1a",
+        f: "#f4c2a1",
+        e: "#241a33",
+        p: "#2c3e50",
+        o: "#161029",
+      };
+
+      function buildShadow(shirtColor) {
+        const px = 4;
+        const colors = { ...baseColors, s: shirtColor };
+        let shadows = [];
+        grid.forEach((row, y) => {
+          [...row].forEach((ch, x) => {
+            if (ch === ".") return;
+            const color = colors[ch] || shirtColor;
+            shadows.push(`${x * px}px ${y * px}px 0 ${color}`);
+          });
+        });
+        return shadows.join(",");
+      }
+
+      function paintAvatar(el) {
+        const shirt = el.dataset.shirt || "#5b8def";
+        el.style.boxShadow = buildShadow(shirt);
+      }
+      document.querySelectorAll(".avatar").forEach(paintAvatar);
+
+      // holiday lights bulbs
+      const bulbRow = document.getElementById("bulb-row");
+      if (bulbRow) {
+        const bulbColors = [
+          "#ff6b6b",
+          "#ffd75e",
+          "#6bd67a",
+          "#6bb8ff",
+          "#ff8fd1",
+        ];
+        for (let i = 0; i < 9; i++) {
+          const b = document.createElement("div");
+          b.className = "bulb";
+          b.style.left = i * 11 + 6 + "px";
+          b.style.background = bulbColors[i % bulbColors.length];
+          b.style.boxShadow =
+            "0 0 6px 2px " + bulbColors[i % bulbColors.length];
+          bulbRow.appendChild(b);
+        }
+      }
+
+      // contact form demo (Bootstrap handles nav + scrollspy natively)
+      const form = document.getElementById("contact-form");
+      const msg = document.getElementById("form-msg");
+
+      if (form && msg) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          msg.style.display = "block";
+          form.reset();
+        });
+      }
+      document.querySelectorAll(".avatar-wrap").forEach((player) => {
+        player.addEventListener("click", () => {
+          player.classList.remove("player-spin");
+
+          // restart animation
+          void player.offsetWidth;
+
+          player.classList.add("player-spin");
+
+          setTimeout(() => {
+            player.classList.remove("player-spin");
+          }, 800);
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        for (let i = 0; i < 6; i++) {
+          const pixel = document.createElement("span");
+
+          pixel.className = "click-pixel";
+
+          pixel.style.left = e.clientX + "px";
+          pixel.style.top = e.clientY + "px";
+
+          pixel.style.setProperty("--x", `${Math.random() * 60 - 30}px`);
+
+          pixel.style.setProperty("--y", `${Math.random() * -60 - 10}px`);
+
+          document.body.appendChild(pixel);
+
+          setTimeout(() => {
+            pixel.remove();
+          }, 600);
+        }
+      });
+      const skillsCollapse = document.getElementById("collapseSkills");
+
+      if (skillsCollapse) {
+        skillsCollapse.addEventListener("shown.bs.collapse", () => {
+          document.querySelectorAll(".skill-bar").forEach((bar) => {
+            const target = bar.dataset.width;
+
+            bar.style.transition = "width 1.2s steps(10)";
+            bar.style.width = target + "%";
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
